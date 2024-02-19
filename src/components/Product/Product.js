@@ -3,8 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import ProductCard from '../ProductCard.js';
 import Loading from './Loading.js';
 import './Product.css';
-import Slider from '@material-ui/core/Slider';
-import Typography from '@material-ui/core/Typography';
+// import Slider from '@material-ui/core/Slider';
+// import Typography from '@material-ui/core/Typography';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import  {addToCart} from '../Cart/addTocart.js'
 
@@ -70,7 +70,7 @@ const Product = () => {
 
             <h1>Products</h1>
 
-            <div className="filterBox">
+            {/* <div className="filterBox">
                 <Typography>Price</Typography>
                 <Slider
                     value={price}
@@ -80,7 +80,7 @@ const Product = () => {
                     min={0}
                     max={1800}
                 />
-            </div>
+            </div> */}
 
             <div className="content">
                 {loading ? <Loading /> :
